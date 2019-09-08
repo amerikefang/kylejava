@@ -1,6 +1,6 @@
 node {
     stage('Git'){
-      git 'hhttps://github.com/amerikefang/kylejava'
+      git 'https://github.com/amerikefang/kylejava'
 
     }
 
