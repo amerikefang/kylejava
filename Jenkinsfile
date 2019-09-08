@@ -5,7 +5,8 @@ node {
     }
 
     stage('Maven Build'){
-      sh 'mvn clean package'
+      def mvnHome = tool name: 'maven3', type: 'maven'
+        sh '${mvnHome}/bin/mvn clean package'
     }
     stage('Archive Artifacts'){
          archiveArtifacts 'target/myweb.war'
