@@ -9,7 +9,7 @@ node {
         sh '${mvnHome}/bin/mvn clean package'
     }
     stage('Archive Artifacts'){
-         archiveArtifacts 'myweb.war'
+         archiveArtifacts 'myweb-8.2.0.war'
     }
 
     stage('Email'){
