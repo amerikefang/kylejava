@@ -8,9 +8,11 @@ public class CalculatorTest extends TestCase {
 	public void testAdd(){
 		Assert.assertEquals(cal.add(10, 20), 30);
 	}
+	public void test sub(){
+		Assert.assertEquls(cal.sub(10,20),-10);
+	}
 	public void testMultiply(){
 		Assert.assertEquals(cal.multiply(10, 20), 200);
 	}
-	public void test substract(){
-		Assert.assertEquls(cal.substract(10,20),-10);
+
 }
