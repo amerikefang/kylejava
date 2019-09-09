@@ -8,11 +8,15 @@ public class CalculatorTest extends TestCase {
 	public void testAdd(){
 		Assert.assertEquals(cal.add(10, 20), 30);
 	}
-	public void testsub(){
+	public void testSub(){
 		Assert.assertEquals(cal.sub(10,20),-10);
 	}
 	public void testMultiply(){
 		Assert.assertEquals(cal.multiply(10, 20), 200);
+	}
+	
+	public void testDivide(){
+		Assert.assertEquals(cal.divide(10, 20), 0.5);
 	}
 
 }
