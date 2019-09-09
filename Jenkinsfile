@@ -1,5 +1,5 @@
 node {
-    stage('Git'){
+    stage('Git Check Out'){
       git 'https://github.com/amerikefang/kylejava'
 
     }
