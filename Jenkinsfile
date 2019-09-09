@@ -5,11 +5,11 @@ node {
     }
 
     stage('Maven Build'){
-      def mvnHome = tool name: 'maven3', type: 'maven'
+      def mvnHome = tool name: 'maven-3', type: 'maven'
         sh '${mvnHome}/bin/mvn clean package'
     }
     stage('Archive Artifacts'){
-         archiveArtifacts 'target/myweb.war'
+         archiveArtifacts 'myweb.war'
     }
 
     stage('Email'){
