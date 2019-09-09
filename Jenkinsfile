@@ -13,7 +13,12 @@ node {
     }
 
     stage('Email'){
-    mail bcc: '', body: '''Thanks,
-    Java Home''', cc: '', from: '', replyTo: '', subject: 'Pipeline Demo', to: 'amerikefang@gmail.com'
+    mail bcc: '', 
+         body: '''This is for testing Pipline. Thanks,Java Home''', 
+         cc: '', 
+         from: '', 
+         replyTo: '', 
+         subject: 'Pipeline Demo-jenkinsfile+git+maven', 
+         to: 'amerikefang@gmail.com'
     }
 }
